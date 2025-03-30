@@ -1,5 +1,6 @@
 import express from "express";
 import { config } from "dotenv";
+import "express-async-errors"; // to handle async errors, no need to write try-catch in every controller any more
 
 import { connectDB } from "./db/connect.js";
 import productsRouter from "./routes/products.js";
